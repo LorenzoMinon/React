@@ -1,0 +1,39 @@
+/* Estilos para el contenedor principal */
+
+.construction-container {
+    display: flex;
+    width: 100vw;  /* Ocupa todo el ancho de la ventana */
+    height: 100vh; /* Ocupa todo el alto de la ventana */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/logoBrand.jpg'); /* Ajusta la ruta según donde hayas colocado tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la ventana */
+    background-position: center; /* Centra la imagen en la ventana */
+    font-family: 'Arial', sans-serif;
+    position: relative; /* Prepara el contenedor para tener contenido en posición absoluta */
+}
+
+/* Estilos para el contenido que se superpone sobre la imagen de fondo */
+.overlay-content {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    color: white; /* Cambia el color del texto a blanco */
+    text-align: center; /* Centra el texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para el texto para asegurar legibilidad */
+    padding: 20px; /* Espaciado interno para el texto */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos específicos para el título */
+.construction-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+/* Estilos específicos para el párrafo */
+.construction-container p {
+    font-size: 1.2em;
+}
