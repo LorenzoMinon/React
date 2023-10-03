@@ -2,14 +2,18 @@
 
 .construction-container {
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100vw;  /* Ocupa todo el ancho de la ventana */
     height: 100vh; /* Ocupa todo el alto de la ventana */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url('./assets/logoBrand.jpg'); /* Ajusta la ruta según donde hayas colocado tu imagen */
-    background-size: cover; /* Asegura que la imagen cubra toda la ventana */
+    background-size:contain; /* Asegura que la imagen cubra toda la ventana */
+    background-repeat: no-repeat;
     background-position: center; /* Centra la imagen en la ventana */
+    background-color: black;
     font-family: 'Arial', sans-serif;
     position: relative; /* Prepara el contenedor para tener contenido en posición absoluta */
 }
