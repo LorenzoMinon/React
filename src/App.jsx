@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from 'react';
 // import UnderConstruction from './UnderConstruction'
 // import { Conteiner } from './components/Conteiner'
-import Product from './components/product';
+import Product from './components/product/Product';
 import productsData from './data/products.json';
 
 export const App = () => {
   const [products, setProducts] = useState([]);
-  
+
+  const getData = async () => {
+    const result = await productsData
+    const data = await result 
+    return data
+  }
+
+ 
   useEffect(() => {
+    getData().then((elem) => setProducts(elem))
     // Aca podriamos cargar los productos desde una API o base de datos
     // En este caso, cargaríamos los productos desde un archivo JSON local 
     // como ejemplo
-    import('./data/products.json')
-      .then((data) => {
-        setProducts(data.default);
-      })
-      .catch((error) => {
-        console.error("No se pudieron cargar los productos", error);
-      });
   }, []); // El array vacío significa que este useEffect se ejecuta solo una vez después del primer renderizado
   
   return (
@@ -29,14 +30,16 @@ export const App = () => {
         ))}
       </div>
     </div>
+
+   
   );
 };
 
-// export const App = () => {
-//   return (
-//     <>
-//         {/* <UnderConstruction/> */}
-//         <Conteiner/>
-//     </>
-//   )
-// }
+{/* <Layout>
+<NavBar></NavBar>
+<Product></Product>
+<Footer></Footer>
+</Layout> */}
+//Productos
+//NavBar
+//Footer
