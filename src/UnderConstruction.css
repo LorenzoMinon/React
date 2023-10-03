@@ -2,8 +2,6 @@
 
 .construction-container {
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
     width: 100vw;  /* Ocupa todo el ancho de la ventana */
     height: 100vh; /* Ocupa todo el alto de la ventana */
     flex-direction: column;
