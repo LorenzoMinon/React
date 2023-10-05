@@ -1,7 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import UnderConstruction from './UnderConstruction.jsx'
-import { App } from './App'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { App } from './App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
